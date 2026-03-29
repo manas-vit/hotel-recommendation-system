@@ -1,2 +1,2 @@
 # hotel-recommendation-system
-An AI/ML-powered hotel recommendation engine built in Python. This project leverages a Kaggle dataset to analyze hotel attributes and compute similarities, providing personalized accommodation suggestions to reduce decision fatigue for travelers.
+Developed a machine learning recommendation system in Python to solve the choice overload problem in travel planning. Utilizing a comprehensive hotel dataset from Kaggle, the system processes raw data, engineers key features, and applies cosine similarity collaborative filtering to deliver highly relevant, personalized hotel suggestions based on user preferences and property characteristics
