@@ -1,6 +1,6 @@
 # Hotel Recommendation System
 
-A content-based hotel recommendation engine built in Python. Given a destination city and your preferences (beach, museum, shopping, etc.), the system ranks hotels by how well their surrounding landmarks match what you are looking for.
+A content-based hotel recomendation engine built in Python. Given a destination city and your preferences (beach, museum, shopping, etc.), the system ranks hotels by how well their surrounding landmarks match what you are looking for.
 
 ---
 
@@ -11,18 +11,18 @@ Most hotel search tools rank by price or ratings. This system ranks by **surroun
 - 11,484 hotels across 70 cities in India
 - 12 preference categories (beach, religious, shopping, museum, and more)
 - Configurable distance filter — only consider landmarks within X km
-- No user accounts or ratings needed — works entirely on landmark data
+- No user accounts or ratings neded — works entirely on landmark data
 
 ---
 
 ## How It Works
 
-The project uses **content-based filtering** with **cosine similarity**:
+The project uses **content-based filtering** with **cosine simillarity**:
 
 1. **Feature Engineering** — Each hotel's raw landmark records are aggregated into a 12-dimensional binary feature vector (e.g. `has_beach=1`, `has_museum=0`)
 2. **User Vector** — Your selected preferences are turned into a matching vector of the same shape
 3. **Cosine Similarity** — The angle between the user vector and each hotel's vector gives a match score
-4. **Final Ranking** — Match score (60%) + landmark richness bonus (25%) + proximity bonus (15%)
+4. **Final Ranking** — Match score (60%) + landmark richnes bonus (25%) + proximity bonus (15%)
 
 ---
 
@@ -155,7 +155,7 @@ Religious + Museum + Monument hotels in Varanasi
 | Landmarks | Name of a nearby landmark |
 | Distance | Distance from hotel to landmark (km) |
 | Type | Landmark category (Beach, Museum, Hospital, etc.) |
-| Latitude / Longitud | Geographic coordinates |
+| Latitude / Longitud | Geographic cordinates |
 
 ---
 
